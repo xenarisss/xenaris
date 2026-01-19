@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bio.xenaris</title>
+    <link rel="icon" href="img/icon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<input type="checkbox" id="start" hidden>
+
+
+
+<label for="start" class="overlay">
+  <span class="toverlay">CLICK</span>
+</label>
+
+<div class="citata">“Reality is an illusion, the universe is a hologram, buy gold, bye!”
+— Bill Cipher, Gravity Falls</div>
+
+<video autoplay muted loop id="bg-video">
+    <source src="img/fon1.mp4" type="video/mp4">
+    иди нахуй
+</video>
+
+<img src="img/avatar.png" alt="" class="avatar">
+<div class="avaramka"></div>
+
+<div class="name">xena.ris</div>
+
+<li><a href="https://ru.namemc.com/search?q=xenariss" class="namemc">n</a></li>
+<li><a href="https://t.me/xenarissbio" class="telegram">T</a></li>
+
+<div id="cursor"></div>
+<canvas id="cursorTrail"></canvas>
+
+
+<div class="geo">➤ 48°52′ S, 123°23′ W</div>
+
+<img src="img/fon1.mp4" alt="" class="imgfon1">
+<div class="test1"></div>
+<div class="test2"></div>
+<div class="test3"></div>
+<div>
+  <img src="img/ds.png" alt="" class="ds">
+  <li><a href=""></a></li>
+</div>
+
+<div class="t1">This nickname is <br> only for Telegram or <br>Discord. I am not<br> responsible for any <br>others<br></div>
+
+<div class="player">
+  <span id="currentTime">00:00</span>
+
+  <input type="range" id="progress" value="0">
+
+  <button id="playPause">▶</button>
+</div>
+
+<audio id="audio" src="music/music.mp3"></audio>
+
+<script src="player.js"></script>
+<script>
+document.querySelectorAll('.ds').forEach(elem => {
+  elem.addEventListener('click', () => {
+    navigator.clipboard.writeText('xena.ris').then(() => {
+      alert('Текст "xena.ris" скопирован!');
+    }).catch(err => {
+      console.error('Ошибка при копировании: ', err);
+    });
+  });
+});
+</script>
+
+<div class="test4"></div>
+</body>
+</html>
+

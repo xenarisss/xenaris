@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+}
+
+/* Оверлей */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* Текст */
+.overlay span {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.toverlay {
+    font-family: 'Press Start 2P', monospace;
+}
+
+.content {
+  filter: grayscale(100%);
+}
+
+#start:checked + .overlay {
+  display: none;
+}
+
+#start:checked ~ .content {
+  filter: none;
+}
+
+
+.test1 {
+  backdrop-filter: blur(10px);
+ position: absolute;
+ height: 130px;
+width: 600px;
+ left: 680px;
+ top: 565px;
+ border-radius: 20px;
+  border: 1px solid #fff;
+   filter: drop-shadow(0 0 10px #030303) 
+ 
+}
+
+
+.test2 {
+  backdrop-filter: blur(10px);
+ position: absolute;
+ height: 150px;
+width: 600px;
+ left: 680px;
+ top: 400px;
+ border-radius: 20px;
+  border: 1px solid #fff;
+  z-index: 3;
+   filter: drop-shadow(0 0 10px #030303) 
+
+}
+
+.test3 {
+  backdrop-filter: blur(10px);
+ position: absolute;
+ height: 310px;
+ width: 600px;
+ left: 680px;
+ top: 80px;
+ border-radius: 20px;
+  border: 1px solid #fff;
+  z-index: 3;
+   filter: drop-shadow(0 0 10px #030303) 
+
+}
+
+.test4  {
+  backdrop-filter: blur(10px);
+ position: absolute;
+ height: 75px;
+width: 600px;
+ left: 680px;
+ top: 710px;
+ border-radius: 20px;
+  border: 1px solid #fff;
+   filter: drop-shadow(0 0 10px #030303) 
+}
+
+.namemc {
+    color: #ffffff;
+    position: absolute;
+    top: 715px;
+    left: 1050px;
+    width: 90px;
+    font-size: 45px;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 0px rgb(255, 255, 255));
+
+  font-family: 'Press Start 2P', monospace;
+  color: #fff;
+
+  text-decoration: none;
+
+}
+
+.telegram {
+      color: #ffffff;
+    position: absolute;
+    top: 725px;
+    left: 840px;
+    width: 90px;
+    font-size: 40px;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 0px rgb(255, 255, 255));
+
+  font-family: 'Press Start 2P', monospace;
+  color: #fff;
+
+  text-decoration: none;
+
+}
+
+#bg-video {
+    position: fixed;   /* Чтобы видео всегда было на фоне */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабирование видео под экран */
+    z-index: -1;       /* Отправляем видео за контент */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+
+.avatar {
+    position: absolute;
+    top: 110px;
+    left: 48%;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    z-index: 5;
+    
+}
+
+.avaramka {
+    position: absolute;
+    top: 104px;
+    left: 916px;
+    width: 110px;
+    height: 110px;
+    border-radius: 60px;
+    z-index: 6;
+    border: 1px solid #fff;
+}
+
+.name {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 220px;
+    left: 900px;
+    width: 120px;
+    font-size: 45px;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 3px rgb(255, 255, 255));
+    
+}
+
+.name:hover {
+   transform: scale(1.1); /* увеличиваем */
+   transition: 0.9s;       /* плавный переход */
+   transition: transform 0.9s ease; /* плавное изменение */
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 3px rgb(255, 255, 255));
+    
+}
+
+.geo {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 500px;
+    left: 830px;
+    width: 120px;
+    font-size: 25px;
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 3px rgb(255, 255, 255));
+    white-space: nowrap;
+    z-index: 4;
+    
+}
+
+.geo:hover {
+   transform: scale(1.1); /* увеличиваем */
+   transition: 0.9s;       /* плавный переход */
+   transition: transform 0.9s ease; /* плавное изменение */
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 3px rgb(255, 255, 255));
+    
+}
+
+.ds {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 720px;
+    left: 940px;
+    width: 50px;
+    font-size: 25px;
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 0px rgb(255, 255, 255));
+    white-space: nowrap;
+    z-index: 10;
+    
+}
+
+.t1 {
+    position: absolute;
+    left: 815px;
+    top: 580px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Press Start 2P', monospace;
+    color: #fff;
+
+}
+
+
+
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 350px;
+  padding: 10px;
+}
+
+.player {
+    position: absolute;
+    left: 780px;
+    top: 430px;
+    z-index: 10;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+input[type="range"] {
+  flex: 1;
+  accent-color: #000000;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.citata {
+    
+  font-family: 'Press Start 2P', monospace;
+  color: #ffffff; /* желтый цвет, как на картинке */
+  font-size: 12px;
+  line-height: 1.4;
+  max-width: 600px;
+  margin: 18px auto;
+  text-align: center;
+  user-select: none;
+  text-shadow:
+    0 0 2px #ffffff,
+    0 0 5px #ffffff;
+}
+
+.citata {
+    position: absolute;
+    left: 683px;
+    top: 280px;
+    z-index: 10;
+}
+
+
+/* Скрываем стандартный курсор */
+body {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Сам курсор */
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Canvas для следа */
+#cursorTrail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+
+button {
+  cursor: default;
+}
